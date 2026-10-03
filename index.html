@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>DIRECTOR'S CODE — The Language of Cinema</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="loader"><div class="loader-mark">DC</div><div class="loader-line"><i></i></div><small>ENTERING THE ACADEMY</small></div>
+
+<header class="nav">
+  <a class="brand" href="#home"><b>DC</b><span>DIRECTOR'S CODE</span></a>
+  <nav>
+    <a href="#craft">The Craft</a>
+    <a href="#labs">Labs</a>
+    <a href="#mind">Director's Mind</a>
+    <a href="#library">Library</a>
+  </nav>
+  <button class="nav-cta" onclick="openAcademy()">ENTER ACADEMY ↗</button>
+</header>
+
+<main>
+<section class="hero" id="home">
+  <div class="hero-grain"></div>
+  <div class="hero-copy reveal">
+    <p class="kicker">THE LANGUAGE OF CINEMA · 001</p>
+    <h1>فیلم را<br><em>فقط نساز.</em><br>آن را ببین.</h1>
+    <p class="lead">یک آکادمی تعاملی برای یادگیری کارگردانی، بازیگری، فیلمبرداری، فیلمنامه، نور، صدا، تدوین و هنر ساختن یک صحنه.</p>
+    <button class="hero-btn" onclick="document.querySelector('#craft').scrollIntoView({behavior:'smooth'})">شروع مسیر <span>↓</span></button>
+  </div>
+  <div class="hero-frame reveal">
+    <div class="frame-top"><span>FRAME 001</span><span>24 FPS</span></div>
+    <div class="lens"><div class="lens-core"></div></div>
+    <div class="frame-bottom"><span>DIRECTOR'S CODE</span><span>REC ●</span></div>
+  </div>
+  <div class="scroll-note">SCROLL TO DISCOVER <span>↓</span></div>
+</section>
+
+<section class="manifesto">
+  <p class="kicker">THE MANIFESTO</p>
+  <h2>هر انتخابی در سینما<br><span>دلیل دارد.</span></h2>
+  <p>دوربین، بازیگر، نور، سکوت، رنگ و حتی یک ثانیه مکث می‌توانند داستان را تغییر دهند. اینجا قرار است یاد بگیریم چرا.</p>
+</section>
+
+<section class="craft" id="craft">
+  <div class="section-head reveal">
+    <div><p class="kicker">01 — THE CRAFT</p><h2>هنر ساختن<br><span>یک فیلم</span></h2></div>
+    <p>مسیر را از ایده تا آخرین Cut دنبال کن. هر بخش یک دنیای کامل از دانش و تمرین است.</p>
+  </div>
+
+  <div class="craft-list">
+    <article class="craft-card reveal" data-topic="directing" onclick="openTopic('directing')">
+      <div class="num">01</div><div class="card-bg bg1"></div>
+      <div class="card-content"><p>THE VISION</p><h3>کارگردانی</h3><span>THE DIRECTOR</span><b>EXPLORE ↗</b></div>
+    </article>
+    <article class="craft-card reveal" data-topic="acting" onclick="openTopic('acting')">
+      <div class="num">02</div><div class="card-bg bg2"></div>
+      <div class="card-content"><p>THE HUMAN ELEMENT</p><h3>بازیگری</h3><span>THE ACTOR</span><b>EXPLORE ↗</b></div>
+    </article>
+    <article class="craft-card reveal" data-topic="cinema" onclick="openTopic('cinema')">
+      <div class="num">03</div><div class="card-bg bg3"></div>
+      <div class="card-content"><p>THE VISUAL LANGUAGE</p><h3>فیلمبرداری</h3><span>THE CAMERA</span><b>EXPLORE ↗</b></div>
+    </article>
+    <article class="craft-card reveal" data-topic="writing" onclick="openTopic('writing')">
+      <div class="num">04</div><div class="card-bg bg4"></div>
+      <div class="card-content"><p>THE BLUEPRINT</p><h3>فیلمنامه</h3><span>THE STORY</span><b>EXPLORE ↗</b></div>
+    </article>
+    <article class="craft-card reveal" data-topic="lighting" onclick="openTopic('lighting')">
+      <div class="num">05</div><div class="card-bg bg5"></div>
+      <div class="card-content"><p>SHAPING EMOTION</p><h3>نورپردازی</h3><span>THE LIGHT</span><b>EXPLORE ↗</b></div>
+    </article>
+    <article class="craft-card reveal" data-topic="editing" onclick="openTopic('editing')">
+      <div class="num">06</div><div class="card-bg bg6"></div>
+      <div class="card-content"><p>THE INVISIBLE ART</p><h3>تدوین</h3><span>THE CUT</span><b>EXPLORE ↗</b></div>
+    </article>
+    <article class="craft-card reveal" data-topic="sound" onclick="openTopic('sound')">
+      <div class="num">07</div><div class="card-bg bg7"></div>
+      <div class="card-content"><p>WHAT YOU DON'T SEE</p><h3>صدا</h3><span>THE SOUND</span><b>EXPLORE ↗</b></div>
+    </article>
+    <article class="craft-card reveal" data-topic="color" onclick="openTopic('color')">
+      <div class="num">08</div><div class="card-bg bg8"></div>
+      <div class="card-content"><p>THE EMOTIONAL PALETTE</p><h3>رنگ</h3><span>THE PALETTE</span><b>EXPLORE ↗</b></div>
+    </article>
+  </div>
+</section>
+
+<section class="labs" id="labs">
+  <div class="section-head reveal">
+    <div><p class="kicker">02 — THE LABS</p><h2>جایی که<br><span>تمرین می‌کنی</span></h2></div>
+    <p>دانش وقتی ارزش دارد که بتوانی آن را روی یک صحنه واقعی اجرا کنی.</p>
+  </div>
+  <div class="lab-grid">
+    <button class="lab lab-main" onclick="openLab('scene')"><span>SCENE LAB</span><strong>یک صحنه را از صفر کارگردانی کن.</strong><i>ENTER LAB ↗</i></button>
+    <button class="lab" onclick="openLab('acting')"><span>ACTING LAB</span><strong>از Objective تا Subtext.</strong><i>OPEN ↗</i></button>
+    <button class="lab" onclick="openLab('camera')"><span>CAMERA LAB</span><strong>قاب را خودت انتخاب کن.</strong><i>OPEN ↗</i></button>
+    <button class="lab" onclick="openLab('light')"><span>LIGHT LAB</span><strong>احساس را با نور بساز.</strong><i>OPEN ↗</i></button>
+  </div>
+</section>
+
+<section class="mind" id="mind">
+  <div class="mind-visual reveal"><div class="crosshair"></div><div class="focus-box">WHY?</div></div>
+  <div class="mind-copy reveal">
+    <p class="kicker">03 — DIRECTOR'S MIND</p>
+    <h2>چرا<br><span>این شات؟</span></h2>
+    <p>کارگردان حرفه‌ای فقط انتخاب نمی‌کند؛ انتخابش را می‌فهمد. این بخش ذهن پشت تصویر را باز می‌کند.</p>
+    <div class="why-list">
+      <button onclick="showWhy('camera')"><b>01</b><span>چرا دوربین اینجاست؟</span><i>→</i></button>
+      <button onclick="showWhy('light')"><b>02</b><span>چرا نور اینجوری است؟</span><i>→</i></button>
+      <button onclick="showWhy('actor')"><b>03</b><span>چرا بازیگر اینجا ایستاده؟</span><i>→</i></button>
+      <button onclick="showWhy('cut')"><b>04</b><span>چرا اینجا Cut می‌زنیم؟</span><i>→</i></button>
+    </div>
+  </div>
+</section>
+
+<section class="path">
+  <p class="kicker">THE DIRECTOR'S PATH</p>
+  <h2>از اولین ایده<br>تا <span>آخرین فریم</span></h2>
+  <div class="timeline">
+    <div><b>01</b><span>IDEA</span><small>ایده و جهان داستان</small></div>
+    <div><b>02</b><span>WRITE</span><small>فیلمنامه و ساختار</small></div>
+    <div><b>03</b><span>PREPARE</span><small>پیش‌تولید و طراحی</small></div>
+    <div><b>04</b><span>SHOOT</span><small>بازی، دوربین و نور</small></div>
+    <div><b>05</b><span>EDIT</span><small>تدوین و صدا</small></div>
+    <div><b>06</b><span>RELEASE</span><small>نسخه نهایی</small></div>
+  </div>
+</section>
+
+<section class="library" id="library">
+  <div class="section-head reveal">
+    <div><p class="kicker">04 — THE LIBRARY</p><h2>کتابخانه<br><span>کارگردان</span></h2></div>
+    <p>ابزارها و منابعی که هنگام ساخت پروژه واقعاً به کارت می‌آیند.</p>
+  </div>
+  <div class="library-grid">
+    <button onclick="openResource('shot')"><span>SHOT LIST</span><b>ساخت لیست نما</b><i>↗</i></button>
+    <button onclick="openResource('breakdown')"><span>SCENE BREAKDOWN</span><b>تحلیل و آماده‌سازی صحنه</b><i>↗</i></button>
+    <button onclick="openResource('storyboard')"><span>STORYBOARD</span><b>تبدیل فیلمنامه به تصویر</b><i>↗</i></button>
+    <button onclick="openResource('glossary')"><span>CINEMA GLOSSARY</span><b>اصطلاحات ضروری سینما</b><i>↗</i></button>
+  </div>
+</section>
+
+<section class="final">
+  <p class="kicker">YOUR FIRST FRAME</p>
+  <h2>حالا<br><span>کارگردانی کن.</span></h2>
+  <button onclick="openAcademy()">ENTER THE ACADEMY ↗</button>
+</section>
+</main>
+
+<footer><div><b>DC</b><strong>DIRECTOR'S CODE</strong></div><p>THE LANGUAGE OF CINEMA.</p><small>© 2026 — BUILT FOR STORYTELLERS</small></footer>
+
+<div class="modal" id="modal"><div class="modal-inner"><button class="close" onclick="closeModal()">×</button><p class="kicker" id="modalKicker"></p><h2 id="modalTitle"></h2><div id="modalBody"></div></div></div>
+
+<script src="script.js"></script>
+</body>
+</html>
